@@ -4,15 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Components1 from './Components1';
+import Index1 from './page/index1';
 // import Components2 from './Components2';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    
-    <Components1/>
-    
+
+    <Components1 />
+    <div>
+      <Index1 />
+    </div>
+
+
   </React.StrictMode>
 );
 
