@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const DisplayImage = props => {
-  return (
-    <div>
-        <img src={ props.url } />
-    </div>
-  )
+export default class DisplayImage extends Component {
+  render() {
+    return (
+      <div div className='displayimage' >
+        <img src ={ './Images/'+this.props.url } />
+      </div>
+    )
+  }
 }
-
-export default DisplayImage
