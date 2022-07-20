@@ -16,6 +16,7 @@ img {
 img:hover {
   transform: scale(1.09);
   transition: all .5s;
+  border-radius:4px;
 }
 
 .gallery {
