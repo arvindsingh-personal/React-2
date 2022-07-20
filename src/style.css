@@ -1,0 +1,36 @@
+.imagecaller {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  
+}
+
+img {
+  width:23.7vw;
+  height: 17vw;
+  margin:2px;
+  margin-left: 0%;
+  border: 1px solid rgb(44, 43, 42);
+  transition: all .5s;
+}
+img:hover {
+  transform: scale(1.09);
+  transition: all .5s;
+}
+
+.gallery {
+  background-color: black;
+  color: white;
+  padding-left: 1%;
+}
+.gallery span {
+  font-size: 2.5vw;
+  font-family: 'Almarai', sans-serif;
+  font-family: 'Charis SIL', serif;
+  font-family: 'Monoton', cursive;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'PT Serif', serif;
+  font-family: 'Six Caps', sans-serif;
+  font-family: 'Smooch', cursive;
+}
