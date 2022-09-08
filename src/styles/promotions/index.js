@@ -20,6 +20,6 @@ export const MessageText = styled(Box)(({ theme }) => ({
   [theme.breakpoints.up('md')]: {
     fontSize: '3rem',
   },
-  color: Colors.black,
+  color: Colors.white,
   fontSize: '1.5rem',
 }))

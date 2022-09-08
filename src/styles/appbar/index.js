@@ -2,6 +2,7 @@ import { List, styled, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { Colors } from '../theme/index';
 import '@fontsource/montez'
+import IconButton from '@mui/material/IconButton'
 
 //container
 export const AppbarContainer = styled(Box)(() => ({
@@ -43,4 +44,11 @@ export const ActionIconsContainerMobile = styled(Box)(() => ({
 
 export const ActionIconsContainerDesktop = styled(Box)(() => ({ 
   flexGrow:0,
+}))
+
+export const DrawerCloseButton = styled(IconButton)(() => ({
+  position:'absolute',
+  top: 10,
+  left:'250px',
+  zIndex:1999,
 }))

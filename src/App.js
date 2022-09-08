@@ -1,11 +1,16 @@
 import './App.css';
 import { ThemeProvider } from '@mui/system';
-import { Container, Button} from '@mui/material';
-import { useEffect, useState } from 'react';
+import { Container } from '@mui/material';
+import { useEffect} from 'react';
 import theme from './styles/theme/index';
 import Appbar from './components/appbar';
-import Banner from './components/banner';
-import { PromotionsContainer } from './styles/promotions/index';
+
+import Footer from './components/footer';
+import AppDrawer from './components/drawer/index';
+import { UIProvider } from './context/ui/index';
+import { Route, Routes } from 'react-router-dom';
+import Home from './components/products/Home';
+import Cart from './components/cart/Cart';
 
 
 function App() {
@@ -22,10 +27,18 @@ function App() {
           background: '#fff'
         }}
       >
-        <Appbar/>
-        <Banner />
+        <UIProvider>
+        <Appbar />
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/cart' element={<Cart/>} />
+        </Routes>
+        <Footer />
+        <AppDrawer />
+        </UIProvider>
+        
       </Container>
-      <PromotionsContainer />
+
     </ThemeProvider>
 
   );
